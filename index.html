@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="./reset.css" rel="stylesheet"/>
+        <link href="./style.css" rel="stylesheet"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+		
+        <title>Chomikuj.pl/Radzio545</title>
+		
+    </head>
+    <body>
+
+		<form class="controls">
+		
+			<fieldset data-filter-group>
+				<select>
+					<option value="">Dowolny gatunek</option>
+					<option value=".komedia">Komedia</option>
+					<option value=".dramat">Dramat</option>
+					<option value=".akcja">Akcja</option>
+					<option value=".romans">Romans</option>
+					<option value=".fantasy">Fantasy</option>
+					<option value=".scifi">Sci-Fi</option>
+					<option value=".przygodowy">Przygodowy</option>
+					<option value=".kryminal">Kryminał</option>
+					<option value=".thriller">Thriller</option>
+					<option value=".horror">Horror</option>
+					<option value=".historyczny">Historyczny</option>
+					<option value=".tvshow">TV Show</option>
+				</select>
+			</fieldset>
+
+			<fieldset data-filter-group>
+				<select>
+					<option value="">Dowolny rok</option>
+					<option value=".y2021">2021</option>
+					<option value=".y2020">2020</option>
+					<option value=".y2019">2019</option>
+					<option value=".y2018">2018</option>
+					<option value=".y2017">2017</option>
+					<option value=".y2016">2016</option>
+					<option value=".y2015">2015</option>
+					<option value=".y2014">2014</option>
+					<option value=".y2013">2013</option>
+					<option value=".y2012">2012</option>
+					<option value=".y2011">2011</option>
+					<option value=".y2010">2010</option>
+					<option value=".y2009">2009</option>
+					<option value=".y2008">2008</option>
+				</select>
+			</fieldset>
+
+			<fieldset data-filter-group>
+				<select>
+					<option value="">Dowolny status</option>
+					<option value=".ended">Zakończone</option>
+					<option value=".continues">Trwające</option>
+				</select>
+			</fieldset>
+
+			<select class="select-sort">
+				<option value="default:asc">Domyślne - Rosnąco</option>
+				<option value="default:desc">Domyślne - Malejąco</option>
+				<option value="name-pl:asc">Polska nazwa - Rosnąco</option>
+				<option value="name-pl:desc">Polska nazwa - Malejąco</option>
+				<option value="name-eng:asc">Angielska nazwa - Rosnąco</option>
+				<option value="name-eng:desc">Angielska nazwa - Malejąco</option>
+				<option value="last-season:asc">Ostatni sezon - Rosnąco</option>
+				<option value="last-season:desc">Ostatni sezon - Malejąco</option>
+				<option value="episodes:asc">Ilość odcinków - Rosnąco</option>
+				<option value="episodes:desc">Ilość odcinków - Malejąco</option>
+			</select>
+			
+			<fieldset data-filter-group>
+				<input type="text" data-search-attribute="data-name" placeholder="Szukaj po tytule"/>
+			</fieldset>
+
+			<button type="reset"><i class="fas fa-undo-alt"></i></button>
+			
+		</form>
+
+		<div class="container">
+		
+			<div class="nofound">Brak pasujących wyników!<br><button id="resetuj" type="reset" data-filter="all">Zresetuj filtry</button></div>
+		
+			<div class="mix komedia dramat y2019 y2020 y2021 continues"
+			data-name="sex education"
+			data-name-pl="sex education"
+			data-name-eng="sex education"
+			data-last-season="2021"
+			data-episodes="24">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Sex+Education#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/5c3bd3c768d46.jpg"/>
+				<div class="content">
+					<b>Sex Education</b>
+					<div class="number">24 ODC. 3 SEZ.</div>
+					<div class="year">2019 - 2021</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix komedia kryminal fantasy y2016 y2017 y2018 y2019 y2020 y2021 ended"
+			data-name="lucyfer - lucifer"
+			data-name-pl="lucyfer"
+			data-name-eng="lucifer"
+			data-last-season="2021"
+			data-episodes="93">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Lucyfer+-+Lucifer#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/v4/series/295685/posters/610bbceff12ba.jpg"/>
+				<div class="content">
+					<b>Lucyfer</b>
+					<b>Lucifer</b>
+					<div class="number">93 ODC. 6 SEZ.</div>
+					<div class="year">2016 - 2021</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix scifi dramat akcja y2018 y2019 continues"
+			data-name="zagubieni w kosmosie - lost in space"
+			data-name-pl="zagubieni w kosmosie"
+			data-name-eng="lost in space"
+			data-last-season="2019"
+			data-episodes="20">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Zagubieni+w+kosmosie+-+Lost+in+Space#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/5db99440861a0.jpg"/>
+				<div class="content">
+					<b>Zagubieni w kosmosie</b>
+					<b>Lost in Space</b>
+					<div class="number">20 ODC. 2 SEZ.</div>
+					<div class="year">2018 - 2019</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix dramat romans y2021 continues"
+			data-name="książęta - young royals"
+			data-name-pl="książęta"
+			data-name-eng="young royals"
+			data-last-season="2021"
+			data-episodes="6">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Ksi*c4*85*c5*bc*c4*99ta+-+Young+Royals#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/v4/series/399833/posters/60aa76fba30fd.jpg"/>
+				<div class="content">
+					<b>Książęta</b>
+					<b>Young Royals</b>
+					<div class="number">6 ODC. 1 SEZ.</div>
+					<div class="year">2021</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix komedia dramat romans y2017 y2018 y2019 ended"
+			data-name="atypowy - atypical"
+			data-name-pl="atypowy"
+			data-name-eng="atypical"
+			data-last-season="2019"
+			data-episodes="38">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Atypowy+-+Atypical#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/330374-2.jpg"/>
+				<div class="content">
+					<b>Atypowy</b>
+					<b>Atypical</b>
+					<div class="number">38 ODC. 3 SEZ.</div>
+					<div class="year">2017 - 2019</div>
+				</div>
+				</a>
+			</div>
+			
+             <div class="mix fantasy przygodowy y2019 continues"
+			 data-name="wiedźmin - the witcher"
+			 data-name-pl="wiedźmin"
+			 data-name-eng="the witcher"
+			 data-last-season="2019"
+			 data-episodes="8">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Wied*c5*bamin+-+The+Witcher#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/series/362696/posters/62003331.jpg"/>
+				<div class="content">
+					<b>Wiedźmin</b>
+					<b>The Witcher</b>
+					<div class="number">8 ODC. 1 SEZ.</div>
+					<div class="year">2019</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix akcja fantasy przygodowy scifi y2019 y2020 continues"
+			data-name="mroczne materie - his dark materials"
+			data-name-pl="mroczne materie"
+			data-name-eng="his dark materials"
+			data-last-season="2020"
+			data-episodes="15">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Mroczne+Materie+-+His+Dark+Materials#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/series/360295/posters/5f8490b855f99.jpg"/>
+				<div class="content">
+					<b>Mroczne Materie</b>
+					<b>His Dark Materials</b>
+					<div class="number">15 ODC. 2 SEZ.</div>
+					<div class="year">2019 - 2020</div>
+				</div>
+				</a>
+			</div>
+
+            <div class="mix kryminal dramat thriller y2008 y2009 y2010 y2011 y2012 y2013 ended"
+			data-name="breaking bad"
+			data-name-pl="breaking bad"
+			data-name-eng="breaking bad"
+			data-last-season="y2013"
+			data-episodes="62">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Breaking+Bad#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/81189-10.jpg"/>
+				<div class="content">
+					<b>Breaking Bad</b>
+					<div class="number">62 ODC. 5 SEZ.</div>
+					<div class="year">2008 - 2013</div>
+				</div>
+				</a>
+			</div>
+
+            <div class="mix kryminal dramat thriller y2018 y2021 ended"
+			data-name="rojst - the mire"
+			data-name-pl="rojst"
+			data-name-eng="the mire"
+			data-last-season="2021"
+			data-episodes="11">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Rojst#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/series/350250/posters/5fc5a5f691d5e.jpg"/>
+				<div class="content">
+					<b>Rojst</b>
+					<b>The Mire</b>
+					<div class="number">11 ODC. 2 SEZ.</div>
+					<div class="year">2018 - 2021</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix dramat horror y2019 ended"
+			data-name="marianne"
+			data-name-pl="marianne"
+			data-name-eng="marianne"
+			data-last-season="2019"
+			data-episodes="8">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Marianne#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/5d816620adb21.jpg"/>
+				<div class="content">
+					<b>Marianne</b>
+					<div class="number">8 ODC. 1 SEZ.</div>
+					<div class="year">2019</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix dramat kryminal y2010 y2012 y2014 y2017 ended"
+			data-name="sherlock"
+			data-name-pl="sherlock"
+			data-name-eng="sherlock"
+			data-last-season="2017"
+			data-episodes="12">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Sherlock#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/176941-17.jpg"/>
+				<div class="content">
+					<b>Sherlock</b>
+					<div class="number">12 ODC. 4 SEZ.</div>
+					<div class="year">2010 - 2017</div>
+				</div>
+				</a>
+			</div>
+			
+            <div class="mix dramat historyczny y2019 ended"
+			data-name="czarnobyl - chernobyl"
+			data-name-pl="czarnobyl"
+			data-name-eng="chernobyl"
+			data-last-season="2019"
+			data-episodes="5">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Czarnobyl+-+Chernobyl#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/5cc12861c93e4.jpg"/>
+				<div class="content">
+					<b>Czarnobyl</b>
+					<b>Chernobyl</b>
+					<div class="number">5 ODC. 1 SEZ.</div>
+					<div class="year">2019</div>
+				</div>
+				</a>
+			</div>
+			
+           <div class="mix dramat fantasy horror y2020 ended"
+		   data-name="drakula - dracula"
+		   data-name-pl="drakula"
+		   data-name-eng="dracula"
+		   data-last-season="2020"
+		   data-episodes="3">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Drakula+-+Dracula#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/series/361160/posters/62043126.jpg"/>
+				<div class="content">
+					<b>Drakula</b>
+					<b>Dracula</b>
+					<div class="number">3 ODC. 1 SEZ.</div>
+					<div class="year">2020</div>
+				</div>
+				</a>
+			</div>
+			
+           <div class="mix tvshow y2021 continues"
+		   data-name="top model"
+		   data-name-pl="top model"
+		   data-name-eng="top model"
+		   data-last-season="2021"
+		   data-episodes="13">
+				<a href="https://chomikuj.pl/Radzio545/Seriale/Top+Model#folderContentContainer">
+				<img src="https://artworks.thetvdb.com/banners/posters/5d700fa8e9eae.jpg"/>
+				<div class="content">
+					<b>Top Model</b>
+					<b>10 sezon</b>
+					<div class="number">13 ODC. 1 SEZ.</div>
+					<div class="year">2021</div>
+				</div>
+				</a>
+			</div>
+			
+			<div class="gap"></div>
+			<div class="gap"></div>
+			<div class="gap"></div>
+		</div>
+
+        <!--<script src="../mixitup.min.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>	
+		<script src="https://www.bostoen.be/assets/bower_components/mixitup-multifilter/dist/mixitup-multifilter.js"></script>
+		
+        <script>
+
+			var containerEl = document.querySelector('.container');
+            var selectSort = document.querySelector('.select-sort');
+			var resetBtn = document.getElementById('resetuj');
+            var inputSearch = document.querySelector('[data-ref="input-search"]');
+
+            var mixer = mixitup(containerEl, {
+				// Wiele filtrów
+                multifilter: {
+                    enable: true
+                },
+				// Domyślne sortowanie
+                load: {
+                    sort: 'default:asc'
+                }
+            });
+			
+			resetBtn.addEventListener('click', function() {
+				// 1. Manually deactivate all active filter UI
+				// E.g. remove active classes, uncheck radios/checkboxes, clear the
+				// values on text inputs etc
+
+				// 2. Go through each named group and set active filters to an empty array
+
+				inputSearch.value = "";
+
+				// 3. Reparse the filter groups
+
+			});
+
+			// Wsparcie sortowania w formie rozwijanej listy
+            selectSort.addEventListener('change', function() {
+                var order = selectSort.value;
+
+                mixer.sort(order);
+            });
+
+        </script>
+    </body>
+</html>
