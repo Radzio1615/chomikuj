@@ -83,7 +83,7 @@
 
 		<div class="container">
 		
-			<div class="nofound">Brak pasujących wyników!<br>Zmień filtry lub użyj przycisku do resetu filtrów.</div>
+			<div class="nofound"><center>Brak pasujących wyników!<br>Zmień filtry lub użyj przycisku do resetu filtrów.</center></div>
 		
 			<div class="mix komedia dramat y2019 y2020 y2021 continues"
 			data-name="sex education"
@@ -325,41 +325,25 @@
 		</div>
 
         <!--<script src="../mixitup.min.js"></script>-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>	
-		<script src="https://www.bostoen.be/assets/bower_components/mixitup-multifilter/dist/mixitup-multifilter.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>	
+	<script src="https://www.bostoen.be/assets/bower_components/mixitup-multifilter/dist/mixitup-multifilter.js"></script>
 		
         <script>
 
-			var containerEl = document.querySelector('.container');
+            var containerEl = document.querySelector('.container');
             var selectSort = document.querySelector('.select-sort');
-			var resetBtn = document.getElementById('resetuj');
             var inputSearch = document.querySelector('[data-ref="input-search"]');
 
             var mixer = mixitup(containerEl, {
-				// Wiele filtrów
                 multifilter: {
                     enable: true
                 },
-				// Domyślne sortowanie
                 load: {
                     sort: 'default:asc'
                 }
             });
 			
-			resetBtn.addEventListener('click', function() {
-				// 1. Manually deactivate all active filter UI
-				// E.g. remove active classes, uncheck radios/checkboxes, clear the
-				// values on text inputs etc
 
-				// 2. Go through each named group and set active filters to an empty array
-
-				inputSearch.value = "";
-
-				// 3. Reparse the filter groups
-
-			});
-
-			// Wsparcie sortowania w formie rozwijanej listy
             selectSort.addEventListener('change', function() {
                 var order = selectSort.value;
 
