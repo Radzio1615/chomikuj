@@ -139,6 +139,10 @@ div.scrollbar-thumb {
 	border-radius: 0;
 }
 
+.scroll-content {
+    height: 100%;
+}
+
 .container {
     padding: 0px 15px 10px 10px;
     text-align: justify;
