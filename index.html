@@ -11,7 +11,7 @@
         <title>Chomikuj.pl/Radzio545</title>
 		
     </head>
-    <body>
+    <body oncontextmenu="return false;">
 
 		<form class="controls">
 		
@@ -309,7 +309,7 @@
 			data-last-episode="2021.07.07"
 			data-episodes="11"
 			data-series="2">
-				<a target="_blank" href="https://chomikuj.pl/Radzio545/Seriale/Rojst#folderContentContainer">
+				<a target="_blank" href="https://chomikuj.pl/Radzio545/Seriale/Rojst+-+The+Mire#folderContentContainer">
 				<img src="https://artworks.thetvdb.com/banners/series/350250/posters/5fc5a5f691d5e.jpg"/>
 				<div class="content">
 					<b>Rojst</b>
@@ -656,6 +656,35 @@
 			<div class="gap"></div>
 			<div class="gap"></div>
 			<div class="gap"></div>
+<!--
+<p style="font-size: 20px">Devtools is <span id='test'>off</span></p>
+<script>
+  var minimalUserResponseInMiliseconds = 100;
+  var before = new Date().getTime();
+  debugger;
+  var after = new Date().getTime();
+  if (after - before > minimalUserResponseInMiliseconds) {
+    document.getElementById('test').innerHTML = 'on';
+  }
+</script>
+<h2 style="font-size: 20px" id="devtools-state"></h2>
+<h3 style="font-size: 20px" id="devtools-orientation"></h3>
+
+<script type="module">
+	import devtools from 'https://sindresorhus.com/devtools-detect/index.js';
+
+	const stateElement = document.querySelector('#devtools-state');
+	const orientationElement = document.querySelector('#devtools-orientation');
+
+	stateElement.textContent = devtools.isOpen ? 'yes' : 'no';
+	orientationElement.textContent = devtools.orientation ? devtools.orientation : '';
+
+	window.addEventListener('devtoolschange', event => {
+		stateElement.textContent = event.detail.isOpen ? 'yes' : 'no';
+		orientationElement.textContent = event.detail.orientation ? event.detail.orientation : '';
+	});
+</script>-->
+
 
 		</div>
 
@@ -764,6 +793,28 @@
 			}, false);
 		
         </script>
+		
+		<script>
+		
+			document.onkeydown = function(e) {
+			  if(event.keyCode == 123) {
+				 return false;
+			  }
+			  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+				 return false;
+			  }
+			  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+				 return false;
+			  }
+			  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+				 return false;
+			  }
+			  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+				 return false;
+			  }
+			}
+			
+		</script>
 
     </body>
 </html>
